@@ -209,6 +209,19 @@
 	html {
 	  scroll-padding-top: 90px;
 	}
+	#menu li {
+		height: 50px;
+	  }
+	
+	  #menu li a {
+		padding: 10px 14px;
+		font-size: 0.9rem;
+	  }
+	
+	  #menu li.logo img {
+		height: 40px;
+		padding-top: 4px;
+	  }
 	.section {
 	  margin: 10px;
 	  padding: 15px;
