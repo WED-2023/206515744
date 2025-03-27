@@ -147,11 +147,18 @@
     $(document).ready(function () {
       $("#menu a").click(function (e) {
         e.preventDefault();
-        $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top
-        }, 800);
+  
+        const target = $($(this).attr('href'));
+        if (target.length) {
+          const offset = window.innerWidth < 600 ? 110 : 70; // adjust this if your menu height changes
+          const scrollTo = target.offset().top - offset;
+  
+          $('html, body').animate({ scrollTop: scrollTo }, 800);
+        }
       });
     });
+  </script>
+  
   </script>
   <script>
     function insertEmoji() {
