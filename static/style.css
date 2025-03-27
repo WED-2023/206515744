@@ -29,13 +29,24 @@
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	margin-bottom: 10px;
   }
+  #menu li.logo {
+	display: flex;
+	align-items: center;
+  }
   
+  #menu li.logo img {
+	height: 60px;
+	width: auto;
+	display: block;
+	padding-top:8px;
+  }
   #menu ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
 	list-style: none;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
   }
   img {
@@ -43,6 +54,12 @@
 	height: auto;
 	display: block;
   }
+  #menu li {
+	display: flex;
+	align-items: center;
+	height: 60px; /* set consistent height */
+  }
+  
   
   #menu li a {
 	display: block;
