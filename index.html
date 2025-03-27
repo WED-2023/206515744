@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <!-- Ensures proper rendering on mobile devices -->
@@ -7,13 +8,17 @@
   <title>My Web Page</title>
   <!-- Link to External CSS -->
   <link rel="stylesheet" type="text/css" href="static/style.css" />
+
+  <meta property="og:url" content="https://wed-2023.github.io/206515744/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Check out my project!" />
+  <meta property="og:description" content="This is my university web project. Hope you like it!" />
+  <meta property="og:image" content="https://wed-2023.github.io/206515744/preview.jpg" /> <!-- Optional image -->
+
 </head>
 
 <body>
 
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_IL/sdk.js#xfbml=1&version=v22.0">
-  </script>
 
   <!-- Navigation Menu -->
   <div id="menu">
@@ -58,8 +63,10 @@
   <section id="playlist" class="section">
     <h2>My Playlist</h2>
     <!-- Responsive iframe -->
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E8VhxKivtKpiZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/37i9dQZF1E8VhxKivtKpiZ?utm_source=generator" width="100%"
+      height="352" frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
     </iframe>
   </section>
 
@@ -68,15 +75,20 @@
     <h2>Give Me a Like</h2>
     <div style="max-width: 360px; margin: 0 auto;">
       <div class="fb-like"
-           data-href="https://wed-2023.github.io/206515744/"
-           data-width="360"
-           data-layout="standard"
-           data-action="like"
-           data-size="small"
-           data-share="false">
-      </div>
+       data-href="https://wed-2023.github.io/206515744/"
+       data-width=""
+       data-layout="standard"
+       data-action="like"
+       data-size="large"
+       data-share="false">
+  </div>
     </div>
   </section>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0">
+  </script>
 
   <!-- QR Code Section -->
   <section id="qrcoder" class="section">
@@ -102,12 +114,12 @@
     <p>The main 3 differences between Web1 and Web2 are:</p>
     <ol>
       <li>Interaction - Web1 was read only where Web2 allowed both read and write.</li>
-      <li>Control and Ownership - in Web1 the websites were owned by individuals or companies. 
-          In Web2 most data and content are controlled by big Platforms such as Google, Facebook, YouTube, etc.</li>
+      <li>Control and Ownership - in Web1 the websites were owned by individuals or companies.
+        In Web2 most data and content are controlled by big Platforms such as Google, Facebook, YouTube, etc.</li>
       <li>Technology - Web1 had mostly static pages with HTML and CSS, while Web2 allowed dynamic pages using
-          JavaScript, APIs, and more.</li>
+        JavaScript, APIs, and more.</li>
     </ol>
-    
+
     <p>The main 3 differences between Web2 and Web3 are:</p>
     <ol>
       <li>Interaction - Web3 has more than read/write; it also focuses on execution using AI-driven interactions.</li>
@@ -120,8 +132,10 @@
     </p>
     <ol>
       <li>In Web1 we might use AltaVista, get a few static HTML pages, and no ability to interact with them.</li>
-      <li>In Web2 we use Google, get results from big platforms like Reddit, YouTube, etc., and we can comment or engage.</li>
-      <li>In Web3 we might use an LLM such as ChatGPT which understands our intent and provides a context-aware, possibly personalized answer.</li>
+      <li>In Web2 we use Google, get results from big platforms like Reddit, YouTube, etc., and we can comment or
+        engage.</li>
+      <li>In Web3 we might use an LLM such as ChatGPT which understands our intent and provides a context-aware,
+        possibly personalized answer.</li>
     </ol>
   </section>
 
@@ -134,7 +148,7 @@
 
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-      
+
       <label for="emojiSelect">Choose an Emoji:</label>
       <select id="emojiSelect">
         <option value="😀">😀</option>
@@ -161,7 +175,7 @@
       });
     });
   </script>
-  
+
   <!-- Insert Emoji Script -->
   <script>
     function insertEmoji() {
@@ -172,4 +186,5 @@
   </script>
 
 </body>
+
 </html>
