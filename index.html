@@ -3,32 +3,33 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- Ensures proper rendering on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edsger W. Dijkstra fan page</title>
-  <!-- Link to External CSS -->
+  <title>Edsger W. Dijkstra Fan Page</title>
+
+  <!-- External Stylesheet -->
   <link rel="stylesheet" type="text/css" href="static/style.css" />
+
+  <!-- Open Graph Meta Tags -->
   <meta property="og:url" content="https://wed-2023.github.io/206515744/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Edsger W. Dijkstra fan page" />
   <meta property="og:description" content="This is my first university web page." />
   <meta property="og:image" content="https://wed-2023.github.io/206515744/preview.jpg" />
-
 </head>
 
 <body>
-
-
   <!-- Navigation Menu -->
   <div id="menu">
     <ul>
-      <li class="logo"><img src="static/logo.png" alt="Logo"></li>
+      <li class="logo">
+        <img src="static/logo.png" alt="Logo">
+      </li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#photos">My Photos</a></li>
       <li><a href="#playlist">My Playlist</a></li>
       <li><a href="#like">Like</a></li>
       <li><a href="#qrcoder">QR Code</a></li>
-      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#spa">Q&amp;A</a></li>
       <li><a href="#contact">Contact Me</a></li>
     </ul>
   </div>
@@ -36,21 +37,18 @@
   <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <!-- dir="rtl" for Hebrew text -->
     <p>
       I am Edsger Wybe Dijkstra, a Dutch computer scientist committed to the mathematical elegance and intellectual
       rigor of computing. My work spans algorithms, programming languages, and formal methods, though I am perhaps best
       known for Dijkstra's algorithm and for advocating structured programming as a disciplined, scientific approach to
       software development. I view programming not as a craft but as a branch of mathematics, where clarity of thought
-      is paramount. My writings, often terse and uncompromising, seek not popularity but truth — for the greatest
-      challenge in computing is not in constructing new machines, but in mastering our own reasoning.
+      is paramount. My writings, often terse and uncompromising, seek not popularity but truth.
     </p>
   </section>
 
   <!-- My Photos Section -->
   <section id="photos" class="section">
     <h2>My Photos</h2>
-    <!-- Flex container for images -->
     <div class="photo-container">
       <img src="static/img1.jpg" alt="img1">
       <img src="static/img2.jpg" alt="img2">
@@ -60,26 +58,29 @@
   <!-- Playlist Section -->
   <section id="playlist" class="section">
     <h2>My Playlist</h2>
-    <!-- Responsive iframe -->
-    <iframe style="border-radius:12px"
-      src="https://open.spotify.com/embed/playlist/7fENFDTpoFZTZN84EAyUhY?utm_source=generator&theme=0" width="100%"
-      height="352" frameBorder="0" allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe
+      src="https://open.spotify.com/embed/playlist/7fENFDTpoFZTZN84EAyUhY?utm_source=generator&theme=0"
+      width="100%" height="352" frameborder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
   </section>
 
-  <!-- Like Section (Facebook) -->
+  <!-- Like Section -->
   <section id="like" class="section">
     <h2>Give Me a Like</h2>
     <div style="max-width: 360px; margin: 0 auto;">
-      <div class="fb-like" data-href="https://wed-2023.github.io/206515744/" data-width="360" data-layout="standard"
-        data-action="like" data-size="small" data-share="false">
+      <div class="fb-like"
+        data-href="https://wed-2023.github.io/206515744/"
+        data-width="360" data-layout="standard" data-action="like"
+        data-size="small" data-share="false">
       </div>
     </div>
   </section>
 
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_IL/sdk.js#xfbml=1&version=v22.0&appId=1733262567546503"></script>
+    src="https://connect.facebook.net/en_IL/sdk.js#xfbml=1&version=v22.0&appId=1733262567546503">
+  </script>
 
   <!-- QR Code Section -->
   <section id="qrcoder" class="section">
@@ -89,48 +90,34 @@
 
   <!-- Q&A Section -->
   <section id="spa" class="section">
-    <h2>Q&A</h2>
-    <p>
-      Web 1.0 is the earliest version, characterized by static pages, limited interactivity, and one-way communication.
-      Mostly read-only and very centralized.
-    </p>
-    <p>
-      Web 2.0 introduced user-generated content, interactivity. Allowed both read and write, less centralized, and
-      was very social focused.
-    </p>
-    <p>
-      Web 3.0 focused on users owning their data using blockchain and smart contracts, uses various elements of AI.
-    </p>
+    <h2>Q&amp;A</h2>
+    <p>Web 1.0 is the earliest version, characterized by static pages, limited interactivity, and one-way communication.</p>
+    <p>Web 2.0 introduced user-generated content and interactivity.</p>
+    <p>Web 3.0 focuses on user ownership of data using blockchain and smart contracts, plus AI.</p>
 
-    <p>The main 3 differences between Web1 and Web2 are:</p>
+    <p>The main differences between Web1 and Web2:</p>
     <ol>
-      <li>Interaction - Web1 was read only where Web2 allowed both read and write.</li>
-      <li>Control and Ownership - in Web1 the websites were owned by individuals or companies.
-        In Web2 most data and content are controlled by big Platforms such as Google, Facebook, YouTube, etc.</li>
-      <li>Technology - Web1 had mostly static pages with HTML and CSS, while Web2 allowed dynamic pages using
-        JavaScript, APIs, and more.</li>
+      <li>Interaction - Web1 was read-only; Web2 allowed read and write.</li>
+      <li>Ownership - Web1: owned by individuals; Web2: controlled by big platforms.</li>
+      <li>Technology - Web1: static HTML; Web2: dynamic JavaScript-based content.</li>
     </ol>
 
-    <p>The main 3 differences between Web2 and Web3 are:</p>
+    <p>The main differences between Web2 and Web3:</p>
     <ol>
-      <li>Interaction - Web3 has more than read/write; it also focuses on execution using AI-driven interactions.</li>
-      <li>Control and Ownership - Web3 is more decentralized, mostly controlled by users (blockchain-based).</li>
-      <li>Technology - Web3 incorporates AI, machine learning, and smart contracts.</li>
+      <li>Interaction - Web3 focuses on AI-driven interactions.</li>
+      <li>Ownership - Web3 is decentralized, user-controlled.</li>
+      <li>Technology - Web3 incorporates AI and blockchain tech.</li>
     </ol>
 
-    <p>
-      Now let’s say we search for "Why do programmers love coffee so much?".
-    </p>
+    <p>Example Search: "Why do programmers love coffee so much?"</p>
     <ol>
-      <li>In Web1 we might use AltaVista, get a few static HTML pages, and no ability to interact with them.</li>
-      <li>In Web2 we use Google, get results from big platforms like Reddit, YouTube, etc., and we can comment or
-        engage.</li>
-      <li>In Web3 we might use an LLM such as ChatGPT which understands our intent and provides a context-aware,
-        possibly personalized answer.</li>
+      <li>Web1: Few static pages from AltaVista.</li>
+      <li>Web2: Google results with interactive platforms like Reddit and YouTube.</li>
+      <li>Web3: AI tools like ChatGPT provide intelligent, personalized answers.</li>
     </ol>
   </section>
 
-  <!-- Contact Form Section -->
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <h2>Contact Me</h2>
     <form action="mailto:ilayc11@gmail.com" method="POST" enctype="text/plain">
@@ -154,7 +141,7 @@
     </form>
   </section>
 
-  <!-- jQuery Smooth Scrolling -->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function () {
@@ -166,8 +153,6 @@
       });
     });
   </script>
-
-  <!-- Insert Emoji Script -->
   <script>
     function insertEmoji() {
       const selectedEmoji = document.getElementById("emojiSelect").value;
@@ -175,7 +160,6 @@
       messageField.value += selectedEmoji;
     }
   </script>
-
 </body>
 
 </html>
