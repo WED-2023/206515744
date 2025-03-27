@@ -1,189 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <!-- Ensures proper rendering on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Page</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
 
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_IL/sdk.js#xfbml=1&version=v22.0">
-    </script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_IL/sdk.js#xfbml=1&version=v22.0">
+  </script>
 
-    <div id="menu">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#photos">My Photos</a></li>
-            <li><a href="#playlist">My Playlist</a></li>
-            <li><a href="#like">Like</a></li>
-            <li><a href="#qrcoder">QR Code</a></li>
-            <li><a href="#spa">Q&A</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
+  <!-- Navigation Menu -->
+  <div id="menu">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR Code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <!-- dir="rtl" for Hebrew text -->
+    <p dir="rtl">
+      חביבה טל
+      <br>
+      מתגוררת באיזור הצפון.
+      <br>
+      פנסיונרית , חובבת קריאה, אינטרנט , ריקודים סלונים צ'י גונג, וכן בישול ואפייה, סבתא לשני נכדים.
+      <br>
+      בנוסף, חובבת טיולים, מוסיקה וצילום.
+      <br>
+    </p>
+  </section>
+
+  <!-- My Photos Section -->
+  <section id="photos" class="section">
+    <h2>My Photos</h2>
+    <!-- Flex container for images -->
+    <div class="photo-container">
+      <img src="img1.jpg" alt="img1">
+      <img src="img2.jpg" alt="img2">
     </div>
+  </section>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p dir="rtl">
-            חביבה טל
-            <br>
-            מתגוררת באיזור הצפון.
-            <br>
-            פנסיונרית , חובבת קריאה, אינטרנט , ריקודים סלונים צ'י גונג, וכן בישול ואפייה, סבתא לשני נכדים.
-            <br>
-            בנוסף, חובבת טיולים, מוסיקה וצילום.
-            <br>
+  <!-- Playlist Section -->
+  <section id="playlist" class="section">
+    <h2>My Playlist</h2>
+    <!-- Responsive iframe -->
+    <iframe
+      src="https://open.spotify.com/embed/playlist/37i9dQZF1E8VhxKivtKpiZ?utm_source=generator"
+      height="352"
+      frameborder="0"
+      allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </section>
 
-        </p>
-    </section>
+  <!-- Like Section (Facebook) -->
+  <section id="like" class="section">
+    <h2>Give Me a Like</h2>
+    <div class="fb-like"
+         data-href="https://wed-2023.github.io/206515744/"
+         data-width=""
+         data-layout="standard"
+         data-action="like"
+         data-size="small"
+         data-share="false">
+    </div>
+  </section>
 
-    <section id="photos" class="section">
-        <h2>My Photos</h2>
-        <div class="photo-container">
-          <img src="img1.jpg" alt="img1">
-          <img src="img2.jpg" alt="img2">
-        </div>
-      </section>
+  <!-- QR Code Section -->
+  <section id="qrcoder" class="section">
+    <h2>Scan My QR Code</h2>
+    <img src="qrcode.png" alt="QRCODE">
+  </section>
 
-    <section id="playlist" class="section">
-        <h2>My Playlist</h2>
-        <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1E8VhxKivtKpiZ?utm_source=generator" max-width="100%"
-            height="352" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </section>
+  <!-- Q&A Section -->
+  <section id="spa" class="section">
+    <h2>Q&A</h2>
+    <p>
+      Web 1.0 is the earliest version, characterized by static pages, limited interactivity, and one-way communication.
+      Mostly read-only and very centralized.
+    </p>
+    <p>
+      Web 2.0 introduced user-generated content, interactivity. Allowed both read and write, less centralized, and
+      was very social focused.
+    </p>
+    <p>
+      Web 3.0 focused on users owning their data using blockchain and smart contracts, uses various elements of AI.
+    </p>
 
-    <section id="like" class="section">
-        <h2>Give Me a Like</h2>
-        <div class="fb-like" data-href="https://wed-2023.github.io/206515744/" data-width="" data-layout="standard"
-            data-action="like" data-size="small" data-share="false">
-        </div>
-    </section>
-
-    <section id="qrcoder" class="section">
-        <h2>Scan My QR Code</h2>
-        <img src="qrcode.png" alt="QRCODE">
-    </section>
-
-    <section id="spa" class="section">
-        <h2>Q&A</h2>
-        <p>
-            Web 1.0 is the earliest version, characterized by static pages, limited interactivity, and one-way
-            communication.
-            Mostly read-only and very centralized.
-        </p>
-        <p>
-            Web 2.0 introduced user-generated content, interactivity. Allowed both read and write, less centralized, and
-            was very social focused.
-        </p>
-        <p>
-            Web 3.0 focused on users owning their data using blockchain and smart contracts, uses various elements of
-            AI.
-        </p>
-        <p>
-            The main 3 differences between Web1 and Web2 are:
-        </p>
-        <ol>
-            <li>
-                Interaction - Web1 was read only where Web2 allowed both read and write.
-            </li>
-            <li>
-                Control and Ownership - in Web1 the websites were owned by individuals or companies. In Web2 most data
-                and content are controlled by big Platforms such as google, facebook, youtube and more.
-            </li>
-            <li>
-                Technology - Web1 had mostly static pages with html and css, while Web2 allowed dynamic pages using
-                JavaScript, APIs and more.
-            </li>
-        </ol>
-        
-        <p>
-            The main 3 differences between Web2 and Web3 are:
-        </p>
-        <ol>
-            <li>
-                Interaction - Web3 has more then Read-write, it also focuses on execute using AI-driven interactions
-            </li>
-            <li>
-                Control and Ownership - Web3 is much more decentralized, and mostly controlled by users
-                (blockchain-based)
-            </li>
-            <li>
-                Technology - Web3 incorporates more statistical domains, such as AI, machine learning and smart
-                contracts.
-            </li>
-        </ol>
-        
-        <p>
-            Now lets say we search for "Why do programmers love coffee so much? ☕💻".
-        </p>
-        <ol>
-            <li>
-                In Web1 we will probably use AltaVista as our search engine, and get a few static HTML pages. We wont be
-                able to interact with them at all.
-            </li>
-            <li>
-                In Web2 we will use Google as our search engine. we get a mix of results from probably reddit, youtube
-                and more big platforms. we could comment in the results pages themselves and interact with other pepole
-                who arrived to the same page.
-            </li>
-            <li>
-                In Web3 we might choose to use an LLM such as ChatGPT to get a result. the LLM will understand my intent
-                and would probably give me a context-aware answer. Also, the LLM might give me personlized answer based
-                on our previous interactions.
-            </li>
-        </ol>
-        
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form action="mailto:ilayc11@gmail.com" method="POST" enctype="text/plain">
+    <p>The main 3 differences between Web1 and Web2 are:</p>
+    <ol>
+      <li>Interaction - Web1 was read only where Web2 allowed both read and write.</li>
+      <li>Control and Ownership - in Web1 the websites were owned by individuals or companies. 
+          In Web2 most data and content are controlled by big Platforms such as Google, Facebook, YouTube, etc.</li>
+      <li>Technology - Web1 had mostly static pages with HTML and CSS, while Web2 allowed dynamic pages using
+          JavaScript, APIs, and more.</li>
+    </ol>
     
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            
-            <label for="emojiSelect">Choose an Emoji:</label>
-            <select id="emojiSelect">
-              <option value="😀">😀</option>
-              <option value="😂">😂</option>
-              <option value="❤️">❤️</option>
-              <option value="👍">👍</option>
-              <option value="🎉">🎉</option>
-            </select>
-            <button type="button" onclick="insertEmoji()">Insert Emoji</button>
-            
+    <p>The main 3 differences between Web2 and Web3 are:</p>
+    <ol>
+      <li>Interaction - Web3 has more than read/write; it also focuses on execution using AI-driven interactions.</li>
+      <li>Control and Ownership - Web3 is more decentralized, mostly controlled by users (blockchain-based).</li>
+      <li>Technology - Web3 incorporates AI, machine learning, and smart contracts.</li>
+    </ol>
 
-            <input type="submit" value="Send Email">
-          </form>
-    </section>
+    <p>
+      Now let’s say we search for "Why do programmers love coffee so much? ☕💻".
+    </p>
+    <ol>
+      <li>In Web1 we might use AltaVista, get a few static HTML pages, and no ability to interact with them.</li>
+      <li>In Web2 we use Google, get results from big platforms like Reddit, YouTube, etc., and we can comment or engage.</li>
+      <li>In Web3 we might use an LLM such as ChatGPT which understands our intent and provides a context-aware, possibly personalized answer.</li>
+    </ol>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#menu a").click(function (e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top
-                }, 800);
-            });
+  <!-- Contact Form Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="mailto:ilayc11@gmail.com" method="POST" enctype="text/plain">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-        });
-    </script>
-<script>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+      
+      <label for="emojiSelect">Choose an Emoji:</label>
+      <select id="emojiSelect">
+        <option value="😀">😀</option>
+        <option value="😂">😂</option>
+        <option value="❤️">❤️</option>
+        <option value="👍">👍</option>
+        <option value="🎉">🎉</option>
+      </select>
+      <button type="button" onclick="insertEmoji()">Insert Emoji</button>
+
+      <input type="submit" value="Send Email">
+    </form>
+  </section>
+
+  <!-- jQuery Smooth Scrolling -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#menu a").click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 800);
+      });
+    });
+  </script>
+  
+  <!-- Insert Emoji Script -->
+  <script>
     function insertEmoji() {
       const selectedEmoji = document.getElementById("emojiSelect").value;
       const messageField = document.getElementById("message");
       messageField.value += selectedEmoji;
     }
   </script>
-</body>
 
+</body>
 </html>

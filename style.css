@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 /* Basic Reset */
 * {
 	margin: 0;
@@ -10,8 +11,8 @@
   
   /* Page Defaults */
   body {
-	/* Change font-family if you imported a Google Font above (e.g., 'Roboto') */
-	font-family: Arial, sans-serif; 
+	/* Update font-family if you imported a Google Font above, e.g. 'Roboto' */
+	font-family: Arial, sans-serif;
 	background-color: #f9fafb;
 	color: #2c3e50;
 	line-height: 1.6;
@@ -19,38 +20,45 @@
   
   /* Navigation Menu */
   #menu {
+	width: 100%;
 	position: sticky;
 	top: 0;
 	z-index: 999;
-	/* Modern gradient background */
 	background: linear-gradient(to right, #ff7e5f, #feb47b);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	margin-bottom: 10px;
   }
   
   #menu ul {
+	margin: 0;
+	padding: 0;
 	display: flex;
 	list-style: none;
 	justify-content: center;
+	flex-wrap: wrap;
+  }
+  img, iframe {
+	max-width: 100%;
+	height: auto;
+	display: block;
   }
   
   #menu li a {
 	display: block;
 	padding: 15px 20px;
 	text-decoration: none;
-	color: #fff; /* White text on gradient */
+	color: #fff;
 	font-weight: bold;
 	transition: background-color 0.3s, color 0.3s;
   }
   
   #menu li a:hover {
-	background-color: rgba(255, 255, 255, 0.2); 
-	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
   }
   
-  /* Main Sections */
+  /* Sections / Card Layout */
   .section {
-	max-width: 900px;  /* content width limit */
+	max-width: 900px;
 	margin: 20px auto;
 	padding: 20px;
 	background-color: #fff;
@@ -75,30 +83,28 @@
 	color: #555;
   }
   
-  /* Extra space for lists */
   ol, ul {
-	padding-left: 2em;  /* Indent the list */
-	margin-bottom: 1em; /* Spacing below the list */
+	padding-left: 2em;
+	margin-bottom: 1em;
 	color: #555;
   }
   
-  /* Slight spacing between list items */
   li {
 	margin-bottom: 0.5em;
   }
   
-  /* "My Photos" Section */
+  /* Photos Section */
   .photo-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;       /* space between images */
-	flex-wrap: wrap; /* allow wrapping if needed on smaller screens */
-	margin-top: 20px;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-top: 20px; /* space between heading and images */
   }
   
   .photo-container img {
-	max-width: 45%; 
+	max-width: 45%;
 	height: auto;
 	display: block;
 	transition: transform 0.3s, box-shadow 0.3s;
@@ -113,19 +119,20 @@
   #qrcoder img {
 	display: block;
 	margin: 0 auto;
-	max-width: 300px; /* or adjust as you like */
+	max-width: 300px;
 	transition: transform 0.3s, box-shadow 0.3s;
   }
+  
   #qrcoder img:hover {
 	transform: scale(1.05);
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Playlist Section (Spotify iframe) */
+  /* Playlist Iframe */
   section#playlist iframe {
 	display: block;
 	width: 100%;
-	border: none; 
+	border: none;
 	border-radius: 12px;
 	margin: 0 auto;
   }
@@ -134,7 +141,7 @@
   section#contact form {
 	display: flex;
 	flex-direction: column;
-	gap: 14px; /* bigger spacing for a more modern look */
+	gap: 14px;
   }
   
   section#contact form label {
@@ -179,26 +186,15 @@
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
   
-  /* Small Screen Adjustments (Responsive) */
+  /* Responsive Adjustments */
   @media (max-width: 600px) {
-	/* Wrap menu items to a new line if needed */
-	#menu ul {
-	  flex-wrap: wrap;
-	  justify-content: center;
+	.section {
+	  margin: 10px;
+	  padding: 15px;
 	}
-	
-	/* Each menu link becomes a full-width block */
-	#menu li a {
-	  display: block;
-	  width: 100%;
-	  text-align: center;
-	  padding: 10px;
-	  border-bottom: 1px solid #ccc;
-	}
-	
-	/* Optional: tighten spacing for less vertical scrolling */
-	#menu li a:last-child {
-	  border-bottom: none; /* remove the last divider */
+  
+	.photo-container img {
+	  max-width: 80%;
 	}
   }
   
