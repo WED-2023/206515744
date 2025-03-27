@@ -195,5 +195,10 @@
 	  padding: 10px;
 	  border-bottom: 1px solid #ccc;
 	}
-}
+	
+	/* Optional: tighten spacing for less vertical scrolling */
+	#menu li a:last-child {
+	  border-bottom: none; /* remove the last divider */
+	}
+  }
   
