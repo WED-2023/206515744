@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 /* Basic Reset */
@@ -12,6 +11,8 @@
   /* Page Defaults */
   body {
 	/* Update font-family if you imported a Google Font above, e.g. 'Roboto' */
+	margin:0;
+	padding:0;
 	font-family: Arial, sans-serif;
 	background-color: #f9fafb;
 	color: #2c3e50;
@@ -37,7 +38,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
   }
-  img, iframe {
+  img {
 	max-width: 100%;
 	height: auto;
 	display: block;
@@ -87,8 +88,7 @@
 	padding-left: 2em;
 	margin-bottom: 1em;
 	color: #555;
-	padding: 0;
-	margin:0;
+	
   }
   
   li {
@@ -100,7 +100,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 	flex-wrap: wrap;
 	margin-top: 20px; /* space between heading and images */
   }
