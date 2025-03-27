@@ -181,22 +181,19 @@
   
   /* Small Screen Adjustments (Responsive) */
   @media (max-width: 600px) {
+	/* Wrap menu items to a new line if needed */
+	#menu ul {
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+	
+	/* Each menu link becomes a full-width block */
 	#menu li a {
+	  display: block;
+	  width: 100%;
+	  text-align: center;
 	  padding: 10px;
+	  border-bottom: 1px solid #ccc;
 	}
-  
-	.section {
-	  margin: 10px;
-	  padding: 15px;
-	}
-  
-	/* Stack photos vertically on small screens */
-	.photo-container {
-	  flex-direction: column;
-	  align-items: center;
-	}
-	.photo-container img {
-	  max-width: 80%;
-	}
-  }
+}
   
