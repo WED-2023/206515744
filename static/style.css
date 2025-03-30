@@ -73,6 +73,7 @@
   
   
   /* ========== SECTION STYLE ========== */
+  
   .section {
 	max-width: 900px;
 	margin: 20px auto;
@@ -108,7 +109,19 @@
 	margin-bottom: 0.5em;
   }
   
+  .about {
+	background-color: #ffffff;  /* A soft light blue tint for a fresh feel */
+	padding: 20px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+  }
   
+  .about h2 {
+	margin-bottom: 15px;
+	color: #2c3e50;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 5px;
+  }
   /* ========== PHOTO SECTION ========== */
   .photo-container {
 	display: flex;
