@@ -110,7 +110,7 @@
   }
   
   .about {
-	background-color: #ffffff;  /* A soft light blue tint for a fresh feel */
+	background-color: #ffffff;
 	padding: 20px;
 	border-radius: 6px;
 	margin-bottom: 20px;
@@ -217,7 +217,7 @@
   }
   
   .qna-section {
-	background: #ffffff;  /* Light blue tone for a fresh look */
+	background: #ffffff;  
 	border: 1px solid #c5dce7;
 	border-radius: 8px;
 	padding: 25px;
