@@ -170,7 +170,7 @@
 
         const target = $($(this).attr('href'));
         if (target.length) {
-          const offset = window.innerWidth < 600 ? 110 : 70; // adjust this if your menu height changes
+          const offset = window.innerWidth < 600 ? 110 : 70;
           const scrollTo = target.offset().top - offset;
 
           $('html, body').animate({ scrollTop: scrollTo }, 800);
